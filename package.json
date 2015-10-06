@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "request-promise": "*",
+    "bluebird": "*",
+    "cheerio": "*"
+  }
+}
