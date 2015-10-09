@@ -1,0 +1,24 @@
+.btns-container {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.btn-container {
+  padding: 1px;
+}
+.word-group {
+  width: 100%;
+}
+
+#word, #definition {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#word {
+  font-size: 3em;
+  text-align: center;
+}
+#definition {
+  font-size: 2em;
+}
