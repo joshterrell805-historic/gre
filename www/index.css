@@ -16,7 +16,7 @@ body > .container {
   padding: 1px;
 }
 
-.word-group {
+.word-group, #prev-word, #next-word {
   width: 100%;
   font-weight: bold;
 }
@@ -28,11 +28,23 @@ body > .container {
   padding-bottom: 12px;
 }
 
+#word-lists {
+  padding: 0;
+}
+
 #word {
   font-size: 4rem;
   text-align: center;
 }
 
 #definition {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  height: 10rem;
+  vertical-align: middle;
+  text-align: center;
+  display: table-cell;
+}
+
+#title, #progress-meter {
+  text-align: center;
 }

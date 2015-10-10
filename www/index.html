@@ -10,13 +10,12 @@
   <div class="container">
     <div class="col-xs-12">
       <div class="row">
-        <select class="form-control">
-          <option value="one">One</option>
-          <option value="two">Two</option>
-          <option value="three">Three</option>
-          <option value="four">Four</option>
-          <option value="five">Five</option>
-        </select>
+        <div class="col-xs-4">
+          <div class="row">
+            <select id="word-lists" class="form-control"></select>
+          </div>
+        </div>
+        <div id="title" class="col-xs-8">GRE Vocab Flashcards</div>
       </div>
     </div>
 
@@ -38,9 +37,19 @@
     </div>
 
     <div class="col-xs-12">
-      <div id="word" class="col-xs-12">Somereallylongword</div>
-      <div id="definition" class="col-xs-12">A definition equally long for such a extensive word. The definition keeps going, it really is quite large. Hrm.</div>
+      <div id="word" class="col-xs-12"></div>
+      <div id="definition" class="col-xs-12"></div>
+    </div>
+
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="btn-container col-xs-2"><button class="btn btn-primary" id="prev-word" type="button">&lt; prev</button></div>
+        <div class="col-xs-8" id="progress-meter">1/10</div>
+        <div class="btn-container col-xs-2"><button class="btn btn-primary" id="next-word" type="button">next &gt;</button></div>
+      </div>
     </div>
   </div>
+
+  <script type='text/javascript' src="lists.js"></script>
 </body>
 </html>

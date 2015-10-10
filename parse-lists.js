@@ -44,8 +44,12 @@ function main() {
 
   Promise.all(promises)
   .then(function() {
-    return Promise.promisify(fs.writeFile)('data/lists.json',
-        JSON.stringify(lists));
+    var listsStr = JSON.stringify(lists);
+    return Promise.promisify(fs.writeFile)('data/lists.json', listsStr)
+    .then(function() {
+      return Promise.promisify(fs.writeFile)('data/lists.js',
+          'window.wordLists = ' + listsStr + ';');
+    })
   })
   .done();
 }
